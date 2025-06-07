@@ -58,6 +58,7 @@ struct ContentView: View {
                 lineStartLocation = lineRange.location
                 lineLength = lineRange.length
             }
+            .font(.title)
 
             Spacer()
             
@@ -67,6 +68,7 @@ struct ContentView: View {
                 Text("line start location (0 based): \(byeByeOptionalInStrings(for: lineStartLocation))")
                 Text("line length: \(byeByeOptionalInStrings(for: lineLength))")
             }
+            .font(.title)
         }
         .padding()
     }
